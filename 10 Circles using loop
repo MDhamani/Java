@@ -1,0 +1,38 @@
+import java.applet.Applet;
+import java.awt.Color;
+import java.awt.Graphics;
+
+
+/**
+ * @author MDhamani
+ */
+public class Circles extends Applet {
+
+  
+    public void paint(Graphics g){
+        
+       g.setColor(Color.BLUE);  
+      int i = 1;
+      int x = 0;
+      int y = 0;
+      while (i<=10){
+          if(i>5){
+              
+                g.setColor(Color.red);
+                g.fillOval(y, 100, 80, 80);
+                i+=1;
+                y+=100;
+               
+              }
+          else
+      {
+               g.fillOval(x, 0 , 80, 80 );
+               i+=1;
+               x+=100;
+          }
+              
+      }
+      
+    }
+    
+}
